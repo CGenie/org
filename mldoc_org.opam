@@ -21,7 +21,7 @@ depends: [
   "lwt"
 ]
 build: [
-  # ["./configure" "--prefix=%{prefix}%"]
+  ["opam" "pin" "add" "angstrom" "git://github.com/tiensonqin/angstrom#jsoo"]
   [make]
 ]
-install: [make "install"]
+install: [make]
