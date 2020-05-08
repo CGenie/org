@@ -24,4 +24,6 @@ build: [
   ["opam" "pin" "add" "angstrom" "git://github.com/tiensonqin/angstrom#jsoo"]
   ["dune" "build" "-p" name "-j" jobs]
 ]
-install: []
+install: [
+  ["dune" "build" "-p" name "--profile=release" "@install" "@JS" "@main"]
+  ]
