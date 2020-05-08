@@ -8,7 +8,7 @@ Another Emacs Org-mode parser
 depends: [
   "ocaml"
   "ocamlfind"
-  "angstrom"
+  "angstrom" {pinned}
   "bigstringaf"
   "cmdliner"
   "core"
