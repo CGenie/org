@@ -22,6 +22,6 @@ depends: [
 ]
 build: [
   ["opam" "pin" "add" "angstrom" "git://github.com/tiensonqin/angstrom#jsoo"]
-  [make]
+  ["dune" "build" "-p" name "-j" jobs]
 ]
-install: [make]
+install: []
