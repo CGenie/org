@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "mldoc_org"
+version: "0.1"
+synopsis: "Another Emacs Org-mode parser"
+description: """
+Another Emacs Org-mode parser
+"""
+depends: [
+  "ocaml"
+  "ocamlfind"
+  "angstrom"
+  "bigstringaf"
+  "cmdliner"
+  "core"
+  "core_bench"
+  "js_of_ocaml"
+  "js_of_ocaml-ppx"
+  "ppx_deriving_yojson"
+  "uri"
+  "yojson"
+  "lwt"
+]
+build: [
+  # ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
