@@ -12,7 +12,7 @@ let read_lines () =
 let from_file filename =
   Lwt_io.lines_of_file filename |> Lwt_stream.to_list
 
-let generate backend output opts filename =
+let generate backend output _opts filename =
   let lines = if filename = "-" then
       read_lines ()
     else from_file filename
