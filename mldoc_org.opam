@@ -20,8 +20,10 @@ depends: [
   "yojson"
   "lwt"
 ]
+pin-depends: [
+  ["anstrom" "git://github.com/tiensonqin/angstrom#jsoo"]
+]
 build: [
-  ["opam" "pin" "add" "angstrom" "git://github.com/tiensonqin/angstrom#jsoo"]
   ["dune" "build" "-p" name "-j" jobs]
 ]
 install: [
